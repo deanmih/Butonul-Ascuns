@@ -13,7 +13,7 @@ function determineWinnerStatusStandardMode(id) {
 
 function generateButtons() {
     let inputNumber = document.getElementById('num').value;
-    chosenValue = Math.floor(Math.random() * inputNumber);
+    chosenValue = Math.floor(Math.random() * (inputNumber - 1));
     for (let i = 0; i < inputNumber; ++i) {
         let btn = document.createElement("button");
         btn.innerText = "I may just be a winning button!";
