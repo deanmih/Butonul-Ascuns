@@ -24,7 +24,7 @@ function generateButtons() {
 }
 
 function determineWinnerStatusGeneratedMode() {
-    console.log(chosenValue);
+    //console.log(chosenValue);
     if (this.id == chosenValue) {
         alert("You won!!");
     } else {
