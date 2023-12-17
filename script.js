@@ -14,7 +14,7 @@ function determineWinnerStatusStandardMode(id) {
 function generateButtons() {
     let inputNumber = document.getElementById('num').value;
     chosenValue = Math.floor(Math.random() * inputNumber);
-    for (let i = 1; i <= inputNumber; ++i) {
+    for (let i = 0; i < inputNumber; ++i) {
         let btn = document.createElement("button");
         btn.innerText = "I may just be a winning button!";
         btn.id = i;
@@ -24,6 +24,7 @@ function generateButtons() {
 }
 
 function determineWinnerStatusGeneratedMode() {
+    console.log(chosenValue);
     if (this.id == chosenValue) {
         alert("You won!!");
     } else {
